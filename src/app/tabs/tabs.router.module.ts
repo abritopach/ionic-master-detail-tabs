@@ -25,6 +25,8 @@ const routes: Routes = [
           }
         ]
       },
+      { path: 'tab2/products', loadChildren: '../tab2/product-list/product-list.module#ProductListPageModule' },
+      { path: 'tab2/products/:id', loadChildren: '../tab2/view-product/view-product.module#ViewProductPageModule' },
       {
         path: 'tab3',
         children: [

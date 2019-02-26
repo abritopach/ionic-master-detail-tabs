@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ViewProduct</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2/products"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-img [src]="product.image"></ion-img>
+        <ion-card-header>
+          <ion-card-title> {{product.name}} </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{product.description}}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

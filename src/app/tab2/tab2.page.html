@@ -6,4 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+<ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Welcome to Ionic Products</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Do you know all our products? Take a look...and start enjoying :)</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-item>
+        <ion-button color="primary" routerLink="/tabs/tab2/products" routerDirection="forward">View Products</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

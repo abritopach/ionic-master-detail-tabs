@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ProductList</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<ion-button routerLink='/tabs/tab2/products/2' routerDirection="forward">Product Detail</ion-button>-->
+  <ion-list>
+    <ion-item *ngFor="let product of products" tappable routerLink="/tabs/tab2/products/{{ product.id }}" routerDirection="forward">
+      <ion-thumbnail slot="start">
+        <img [src]="product.image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
